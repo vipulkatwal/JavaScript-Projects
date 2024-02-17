@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather Forecast</title>
+		<!-- favicon -->
+		<link
+			rel="icon"
+			type="image/png"
+			href="/Weather Application/Images/mist.png"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="/Weather Application/CSS/style.css" />
+	</head>
+	<body>
+		<div class="card">
+			<!-- Search Box -->
+			<div class="search">
+				<input type="text" placeholder="enter city name" , spellcheck="false" />
+				<button>
+					<img src="/Weather Application/Images/search.png" alt="" />
+				</button>
+			</div>
+			<!-- Adding invalid city name -->
+			<div class="error">
+				<p>Invalid city name</p>
+			</div>
+			<!-- adding random city -->
+			<div class="weather">
+				<img src="/Weather Application/Images/rain.png" class="weather-icon" />
+				<h1 class="temp">16°C</h1>
+				<h2 class="city">New York</h2>
+				<div class="details">
+					<div class="col">
+						<img src="/Weather Application/Images/humidity.png" alt="" />
+						<div>
+							<p class="humidity">50%</p>
+							<p>Humidity</p>
+						</div>
+					</div>
+					<div class="col">
+						<img src="/Weather Application/Images/wind.png" alt="" />
+						<div>
+							<p class="wind">15km/h</p>
+							<p>Wind Speed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="/Weather Application/JS/app.js"></script>
+	</body>
+</html>
