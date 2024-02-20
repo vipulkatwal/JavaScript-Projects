@@ -1,5 +1,4 @@
 /* Global Properties */
-
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +11,7 @@ body {
 }
 /* ===================================== END ================================= */
 
-/* Card  */
+/* Card styling */
 .card {
 	width: 90%;
 	max-width: 470px;
@@ -24,14 +23,15 @@ body {
 	border-radius: 20px;
 }
 
-/* search field */
+/* Search field styling */
 .search {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-/* input field */
+
+/* Input field styling */
 .search input {
 	border: 0;
 	outline: 0;
@@ -44,6 +44,8 @@ body {
 	margin-right: 16px;
 	font-size: 18px;
 }
+
+/* Button styling in the search field */
 .search button {
 	border: 0;
 	outline: 0;
@@ -53,24 +55,30 @@ body {
 	height: 50px;
 	cursor: pointer;
 }
+
+/* Image styling in the search button */
 .search button img {
 	width: 18px;
 }
 
-/* weather */
+/* Weather styling */
 .weather-icon {
 	width: 170px;
 	margin-top: 30px;
 }
+
 .weather h1 {
 	font-size: 80px;
 	font-weight: 500;
 }
+
 .weather h2 {
 	font-size: 45px;
 	font-weight: 400;
 	margin-top: -10px;
 }
+
+/* Details section styling */
 .details {
 	display: flex;
 	align-items: center;
@@ -78,24 +86,33 @@ body {
 	padding: 0 20px;
 	margin-top: 50px;
 }
+
+/* Column styling in the details section */
 .col {
 	display: flex;
 	align-items: center;
 	text-align: left;
 }
+
+/* Image styling in the column */
 .col img {
 	width: 40px;
 	margin-right: 10px;
 }
+
+/* Humidity and Wind styling */
 .humidity,
 .wind {
 	font-size: 28px;
 	margin-top: -6px;
 }
 
+/* Hidden by default, shown on valid data */
 .weather {
 	display: none;
 }
+
+/* Error message styling */
 .error {
 	text-align: left;
 	margin-left: 10px;

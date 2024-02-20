@@ -1,45 +1,56 @@
 <html lang="en">
 	<head>
+		<!-- Meta tags for character set and viewport -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather Forecast</title>
-		<!-- favicon -->
-		<link
-			rel="icon"
-			type="image/png"
-			href="/Weather Application/Images/mist.png"
-		/>
-		<!-- CSS -->
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="/Weather Application/Images/mist.png" />
+		<!-- Link to external CSS file -->
 		<link rel="stylesheet" href="/Weather Application/CSS/style.css" />
 	</head>
 	<body>
+		<!-- Container for the weather card -->
 		<div class="card">
 			<!-- Search Box -->
 			<div class="search">
+				<!-- Input for entering the city name -->
 				<input type="text" placeholder="enter city name" , spellcheck="false" />
+				<!-- Button for triggering the search -->
 				<button>
 					<img src="/Weather Application/Images/search.png" alt="" />
 				</button>
 			</div>
-			<!-- Adding invalid city name -->
+			<!-- Section for displaying an error message for an invalid city name -->
 			<div class="error">
+				<!-- Paragraph displaying the error message -->
 				<p>Invalid city name</p>
 			</div>
-			<!-- adding random city -->
+			<!-- Section for displaying weather information -->
 			<div class="weather">
+				<!-- Icon representing the weather -->
 				<img src="/Weather Application/Images/rain.png" class="weather-icon" />
+				<!-- Temperature display -->
 				<h1 class="temp">16°C</h1>
+				<!-- City name display -->
 				<h2 class="city">New York</h2>
+				<!-- Details section including humidity and wind speed -->
 				<div class="details">
+					<!-- Column for humidity information -->
 					<div class="col">
+						<!-- Icon representing humidity -->
 						<img src="/Weather Application/Images/humidity.png" alt="" />
+						<!-- Humidity value and label -->
 						<div>
 							<p class="humidity">50%</p>
 							<p>Humidity</p>
 						</div>
 					</div>
+					<!-- Column for wind speed information -->
 					<div class="col">
+						<!-- Icon representing wind speed -->
 						<img src="/Weather Application/Images/wind.png" alt="" />
+						<!-- Wind speed value and label -->
 						<div>
 							<p class="wind">15km/h</p>
 							<p>Wind Speed</p>
@@ -49,7 +60,7 @@
 			</div>
 		</div>
 
-		<!-- JavaScript -->
+		<!-- JavaScript file for dynamic behavior -->
 		<script src="/Weather Application/JS/app.js"></script>
 	</body>
 </html>
