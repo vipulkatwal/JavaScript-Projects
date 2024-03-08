@@ -1,0 +1,95 @@
+/* Global Properties */
+* {
+	/* Resetting margins, paddings, and using a common font family for consistency */
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	/* Set the background color for the entire body */
+	background: #001e4d;
+}
+
+/* Styling for the main application container */
+.app {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	margin: 100px auto 0;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.app h1 {
+	/* Styling for the main heading of the application */
+	font-size: 25px;
+	color: #001e4d;
+	font-weight: 700;
+	border-bottom: 1px solid #333;
+	padding-bottom: 30px;
+}
+
+.quiz {
+	/* Styling for the quiz container */
+	padding: 20px 0;
+}
+
+.quiz h2 {
+	/* Styling for the quiz question headings */
+	font-size: 18px;
+	color: #001e4d;
+	font-weight: 600;
+}
+
+/* Styling for answer buttons */
+.btn {
+	background: white;
+	color: #222;
+	font-weight: 500;
+	width: 100%;
+	border: 1px solid #222;
+	padding: 10px;
+	text-align: left;
+	margin: 10px 0;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+	/* Styling for hover effect on answer buttons */
+	background: #222;
+	color: #fff;
+}
+
+.btn:disabled {
+	/* Styling for disabled answer buttons */
+	cursor: no-drop;
+}
+
+/* Styling for the "Next" button */
+#next-btn {
+	background: #001e4d;
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	border: 0;
+	padding: 10px;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+
+/* Styling for correct and incorrect answer indicators */
+.correct {
+	background: #9aeabc;
+}
+
+.incorrect {
+	background: #ff9393;
+}
