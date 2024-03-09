@@ -93,9 +93,9 @@ body {
 }
 
 .toast.error::after {
-	background: red; /* Color for error toast underline */
+	background: red; /* Color for error (red) toast underline */
 }
 
 .toast.invalid::after {
-	background: orange; /* Color for invalid toast underline */
+	background: orange; /* Color for invalid (orange) toast underline */
 }

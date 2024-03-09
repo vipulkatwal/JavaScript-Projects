@@ -32,7 +32,7 @@ function showToast(msg) {
 		toast.classList.add("invalid");
 	}
 
-	// Set a timeout to remove the toast after 6000 milliseconds (6 seconds)
+	// Set a timeout to remove the toast after 6000 milliseconds (6 seconds).
 	setTimeout(() => {
 		toast.remove();
 	}, 6000);
