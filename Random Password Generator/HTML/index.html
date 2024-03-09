@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Set character encoding for the document -->
+		<meta charset="UTF-8" />
+
+		<!-- Configure viewport settings for responsive design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Set the title of the document -->
+		<title>Random Password Generator</title>
+
+		<!-- Link to external CSS file for styling -->
+		<link rel="stylesheet" href="/Random Password Generator/CSS/style.css" />
+	</head>
+	<body>
+		<!-- Main container for the Random Password Generator -->
+		<div class="container">
+			<!-- Heading for the Random Password Generator -->
+			<h1>Generate a <br /><span>Random Password</span></h1>
+
+			<!-- Container for displaying the generated password -->
+			<div class="display">
+				<!-- Input field to display the generated password -->
+				<input type="text" id="password" placeholder="Password" />
+
+				<!-- Image button to copy the generated password -->
+				<img
+					src="/Random Password Generator/Images/copy.png"
+					onclick="copyPassword()"
+				/>
+			</div>
+
+			<!-- Button to trigger the password generation -->
+			<button onclick="createPassword()">
+				<!-- Image for the button -->
+				<img src="/Random Password Generator/Images/generate.png" alt="" />
+
+				<!-- Text for the button -->
+				Generate Password
+			</button>
+		</div>
+
+		<!-- Include the JavaScript file for the password generation logic -->
+		<script src="/Random Password Generator/JS/app.js"></script>
+	</body>
+</html>
