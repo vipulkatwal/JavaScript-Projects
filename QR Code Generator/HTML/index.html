@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Set character encoding for the document -->
+		<meta charset="UTF-8" />
+
+		<!-- Configure viewport settings for responsive design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Set the title of the document -->
+		<title>QR Code Generator</title>
+
+		<!-- Link to external CSS file for styling -->
+		<link rel="stylesheet" href="/QR Code Generator/CSS/style.css" />
+	</head>
+	<body>
+		<!-- Main container for the QR Code Generator web page -->
+		<div class="container">
+			<!-- Paragraph prompting the user to enter text or URL -->
+			<p>Enter your text or URL</p>
+
+			<!-- Input field for the user to enter text or URL -->
+			<input type="text" placeholder="Text or URL" id="qrText" />
+
+			<!-- Container for displaying the generated QR Code image -->
+			<div class="imgBox">
+				<!-- Image element for displaying the QR Code -->
+				<img src="" id="qrImage" />
+			</div>
+
+			<!-- Button to trigger the generation of the QR Code -->
+			<button onclick="generateQR()">Generate QR Code</button>
+		</div>
+
+		<!-- Include the JavaScript file for handling functionality -->
+		<script src="/QR Code Generator/JS/app.js"></script>
+	</body>
+</html>
