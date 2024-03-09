@@ -1,0 +1,42 @@
+<!-- HTML Document for Snack Bar -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags for character set and viewport -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title of the webpage -->
+		<title>Snack Bar</title>
+
+		<!-- Link to the external stylesheet -->
+		<link rel="stylesheet" href="/Snack Bar/CSS/style.css" />
+
+		<!-- Link to the Font Awesome Icon Pack -->
+		<script
+			src="https://kit.fontawesome.com/2641d34cf4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<!-- Container for buttons triggering toast messages -->
+		<div class="buttons">
+			<!-- Button to trigger success toast -->
+			<button onclick="showToast(successMsg)">Success</button>
+
+			<!-- Button to trigger error toast -->
+			<button onclick="showToast(errorMsg)">Error</button>
+
+			<!-- Button to trigger invalid input toast -->
+			<button onclick="showToast(invalidMsg)">Invalid</button>
+		</div>
+
+		<!-- Container for displaying toast messages -->
+		<div id="toastBox"></div>
+
+		<!-- JavaScript file for handling toast functionality -->
+		<script src="/Snack Bar/JS/app.js"></script>
+	</body>
+</html>
