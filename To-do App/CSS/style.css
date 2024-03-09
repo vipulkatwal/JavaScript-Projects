@@ -106,6 +106,7 @@ ul li.checked::before {
 }
 
 /* Styles for the cross icon */
+
 ul li span {
 	position: absolute;
 	right: 0;
