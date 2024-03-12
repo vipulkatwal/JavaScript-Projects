@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interactive Stopwatch</title>
+		<link rel="stylesheet" href="/Stopwatch/CSS/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Heading for the stopwatch -->
+			<h1>Stopwatch</h1>
+			<div class="stopwatch">
+				<!-- Display for the stopwatch time -->
+				<div class="display">00:00:00</div>
+				<!-- Buttons for controlling the stopwatch -->
+				<div class="buttons">
+					<button id="startStopBtn" onclick="startStop()">Start</button>
+					<button id="resetBtn" onclick="reset()">Reset</button>
+					<button id="pauseBtn" onclick="pause()">Pause</button>
+				</div>
+			</div>
+		</div>
+		<script src="/Stopwatch/JS/app.js"></script>
+	</body>
+</html>
