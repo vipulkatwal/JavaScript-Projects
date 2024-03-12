@@ -1,0 +1,70 @@
+<!-- HTML -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music Player</title>
+
+		<!-- Link to external stylesheet -->
+		<link rel="stylesheet" href="/Music Player/CSS/style.css" />
+
+		<!-- Include Font Awesome icons -->
+		<script
+			src="https://kit.fontawesome.com/2641d34cf4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Music Player Section -->
+			<div class="music-player">
+				<!-- Navigation Icons -->
+				<nav>
+					<div class="circle">
+						<i class="fas fa-angle-left"></i>
+					</div>
+					<div class="circle">
+						<i class="fas fa-bars"></i>
+					</div>
+				</nav>
+
+				<!-- Song Information -->
+				<img src="/Music Player/Images/thumbnail.jpg" class="song-img" />
+				<h1>Everyday</h1>
+				<p>A$AP Rocky</p>
+
+				<!-- Audio Player -->
+				<audio id="song">
+					<source
+						src="/Music Player/Audio/01 A$AP Rocky - Everyday.mp3"
+						type="audio/mpeg"
+					/>
+				</audio>
+
+				<!-- Time Display -->
+				<div class="time-display">
+					<span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+				</div>
+
+				<!-- Progress Bar -->
+				<input type="range" value="0" id="progress" />
+
+				<!-- Music Controls -->
+				<div class="controls">
+					<div>
+						<i class="fa-solid fa-backward"></i>
+					</div>
+					<div onclick="playPause()">
+						<i class="fa-solid fa-play" id="ctrlIcon"></i>
+					</div>
+					<div>
+						<i class="fa-solid fa-forward"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="/Music Player/JS/app.js"></script>
+	</body>
+</html>
