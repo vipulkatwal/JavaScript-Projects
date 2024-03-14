@@ -1,0 +1,126 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Styling for the container */
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(63, 130, 251);
+	background: radial-gradient(
+		circle,
+		rgba(63, 130, 251, 1) 0%,
+		rgba(252, 70, 110, 1) 100%
+	);
+}
+
+/* Styling for the useful links */
+.useful-links {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+/* Styling for useful links anchor tags */
+.useful-links a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Styling for the form */
+.container form {
+	width: 90%;
+	max-width: 500px;
+	padding: 50px 30px 20px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+/* Styling for the user icon */
+.fa-user {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	color: rgb(63, 130, 251);
+	font-size: 26px;
+	padding: 20px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the input group */
+.input-group {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	position: relative;
+}
+
+/* Styling for the input group label */
+.input-group label {
+	flex-basis: 28%;
+}
+
+/* Styling for input and textarea */
+.input-group input,
+.input-group textarea {
+	flex-basis: 68%;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #999;
+	color: #333;
+	font-size: 16px;
+}
+
+/* Styling for placeholder text */
+::placeholder {
+	font-size: 14px;
+}
+
+/* Styling for form button */
+form button {
+	background: rgb(63, 130, 251);
+	color: #fff;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	padding: 10px 40px;
+	outline: 0;
+	cursor: pointer;
+	display: block;
+	margin: 30px auto 10px;
+}
+
+/* Styling for the validation error message */
+.input-group span {
+	position: absolute;
+	bottom: 12px;
+	right: 17px;
+	font-size: 14px;
+	color: red;
+}
+
+/* Styling for the submit error message */
+#submit-error {
+	color: red;
+}
+
+/* Styling for the success icon in the validation message */
+.input-group span i {
+	color: seagreen;
+}

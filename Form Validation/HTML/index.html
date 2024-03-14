@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Validation</title>
+		<!-- Link to external stylesheet -->
+		<link rel="stylesheet" href="/Form Validation/CSS/style.css" />
+		<!-- Include Font Awesome script -->
+		<script
+			src="https://kit.fontawesome.com/2641d34cf4.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- Container for the form -->
+		<div class="container">
+			<form>
+				<!-- User icon -->
+				<i class="fa-solid fa-user"></i>
+				<!-- Input group for Full Name -->
+				<div class="input-group">
+					<label>Full Name</label>
+					<input
+						type="text"
+						placeholder="Enter your name"
+						id="contact-name"
+						onkeyup="validateName()"
+					/>
+					<!-- Error message for name validation -->
+					<span id="name-error"></span>
+				</div>
+
+				<!-- Input group for Phone No. -->
+				<div class="input-group">
+					<label>Phone No.</label>
+					<input
+						type="tel"
+						placeholder="123 456 7890"
+						id="contact-phone"
+						onkeyup="validatePhone()"
+					/>
+					<!-- Error message for phone validation -->
+					<span id="phone-error"></span>
+				</div>
+
+				<!-- Input group for Email Id -->
+				<div class="input-group">
+					<label>Email Id</label>
+					<input
+						type="email"
+						placeholder="Enter Email"
+						id="contact-email"
+						onkeyup="validateEmail()"
+					/>
+					<!-- Error message for email validation -->
+					<span id="email-error"></span>
+				</div>
+
+				<!-- Input group for Message -->
+				<div class="input-group">
+					<label>Your Message</label>
+					<textarea
+						rows="5"
+						placeholder="Enter your message"
+						id="contact-message"
+						onkeyup="validateMessage()"
+					></textarea>
+					<!-- Error message for message validation -->
+					<span id="message-error"></span>
+				</div>
+
+				<!-- Submit button -->
+				<button onclick="return validateForm()">Submit</button>
+				<!-- Error message for form validation -->
+				<span id="submit-error"></span>
+			</form>
+		</div>
+		<!-- Include JavaScript file -->
+		<script src="/Form Validation/JS/app.js"></script>
+	</body>
+</html>
